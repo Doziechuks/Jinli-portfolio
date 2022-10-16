@@ -2,6 +2,7 @@ import './App.css';
 import HomePage from './pages/homePage';
 import LoadingPage from './pages/isLoagingPage';
 import NavBar from './components/navBar';
+import MobileNavBar from './components/mobileNavBar';
 import { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
       {isLoading ? (
         <div>
           <NavBar />
+          <MobileNavBar />
           <Routes>
             <Route exact path="/" element={<HomePage />} />
           </Routes>

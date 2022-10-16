@@ -1,5 +1,4 @@
 .navbar-wrapper{
-  border: 1px red solid;
   width: 100%;
   min-height: 6em;
   padding: 0 1.5em;
@@ -16,7 +15,6 @@
   font-size: 4rem;
 }
 .nav-options{
-  border: 1px red solid;
   width: 100%;
   max-width: 40em;
   display: flex;
@@ -42,7 +40,6 @@
   background: #fff;
 }
 .contact-info-box{
-  border: 1px red solid;
   width: 100%;
   max-width: 18em;
   display: flex;
@@ -53,8 +50,10 @@
   color: #f2f2f2;
   font-size: 1.3rem;
 }
+.contact-info-box a:hover{
+  color: yellow;
+}
 .phone{
-  border: 1px red solid;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -64,6 +63,14 @@
   margin-left: 5px;
   font-size: 1.3rem;
 }
+.phone:hover {
+  color: yellow;
+}
 .phone-icon{
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1000px) {
+  .navbar-wrapper{
+    display: none;
+  }
 }

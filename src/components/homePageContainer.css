@@ -1,5 +1,4 @@
 .homepagecontainer-wrapper{
-  border: 1px red solid;
   width: 100%;
   height: 80vh;
   display: flex;
@@ -10,7 +9,6 @@
 .homecontainer-content-wrapper{
   width: 100%;
   height: 100%;
-  border: 1px red solid;
   opacity: 0;
   position: absolute;
   transition: all 1s ease-in-out;
@@ -26,7 +24,6 @@
   transform: translateX(-100%);
 }
 .arrows {
-  border: 1px red solid;
   width: 100%;
   display: flex;
   align-items: center;
@@ -37,7 +34,6 @@
 }
 .arrow-left,
 .arrow-right {
-  border: 1px red solid;
   background-color: #fff;
   opacity: 0.5;
   padding: 0.7em 0.9em;
