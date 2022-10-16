@@ -4,7 +4,7 @@ import LoadingPage from './pages/isLoagingPage';
 import NavBar from './components/navBar';
 import MobileNavBar from './components/mobileNavBar';
 import { useState, useEffect } from "react";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,9 +20,9 @@ function App() {
         <div>
           <NavBar />
           <MobileNavBar />
-          <Routes>
-            <Route exact path="/" element={<HomePage />} />
-          </Routes>
+          <Switch>
+            <Route exact path="/" component={ HomePage } />
+          </Switch>
         </ div>
       ) : (
         <LoadingPage />
