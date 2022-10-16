@@ -1,0 +1,69 @@
+.navbar-wrapper{
+  border: 1px red solid;
+  width: 100%;
+  min-height: 6em;
+  padding: 0 1.5em;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.nav-icon{
+  color: yellow;
+  font-size: 4rem;
+}
+.nav-options{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 40em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.option{
+  color: yellow;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+.option:hover{
+  color: black;
+  border: 1px #fff solid;
+  padding: 0.1em 0.1em;
+  background: #fff;
+}
+.active{
+  color: black;
+  border: 1px #fff solid;
+  padding: 0.1em 0.1em;
+  background: #fff;
+}
+.contact-info-box{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 18em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-info-box a{
+  color: #f2f2f2;
+  font-size: 1.3rem;
+}
+.phone{
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #f2f2f2;
+}
+.phone p{
+  margin-left: 5px;
+  font-size: 1.3rem;
+}
+.phone-icon{
+  font-size: 1.8rem;
+}
