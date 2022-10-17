@@ -1,0 +1,30 @@
+.form-input-wrapper{
+  width: 100%;
+}
+.contact-label{
+  display: block;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.contact-input, .contact-textArea{
+  width: 100%;
+  outline: none;
+  border: 1px black solid;
+  padding: 0.4em;
+  font-size: 1.3rem;
+  background: transparent;
+}
+.contact-input{
+  margin-bottom: 1em;
+}
+.contact-textArea{
+  min-height: 10em;
+}
+.contact-textArea::placeholder{
+   font-family: 'Hind Vadodara', sans-serif;
+   font-size: 1.3rem;
+}
+.contact-input::placeholder{
+   font-family: 'Hind Vadodara', sans-serif;
+   font-size: 1.3rem;
+}

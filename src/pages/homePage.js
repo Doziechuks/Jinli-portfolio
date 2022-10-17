@@ -3,6 +3,7 @@ import HomePageContainer from '../componets/homPageContainer';
 import AboutSection from '../componets/aboutItem';
 import ProductSection from '../componets/productsSection';
 import TestimonialSection from '../componets/testimonial';
+import ContactSection from '../componets/contactSection';
 
 const HomePage = () => {
   return ( 
@@ -11,6 +12,7 @@ const HomePage = () => {
       <AboutSection />
       <ProductSection />
       <TestimonialSection />
+      <ContactSection />
     </div>
    );
 }

@@ -1,8 +1,8 @@
 import './customButton.css';
 
-const CustomButton = ({ children,isHomePage, ...otherprops }) => {
+const CustomButton = ({ children, isHomePage, isSubmit, ...otherprops }) => {
   return ( 
-    <button className= {`custom-button ${isHomePage ? 'home-animation' : ''}`} { ...otherprops }>{ children }</button>
+    <button className= {`custom-button ${isHomePage ? 'home-animation' : ''} ${isSubmit ? 'submit' : ''}`} { ...otherprops }>{ children }</button>
    );
 }
  
