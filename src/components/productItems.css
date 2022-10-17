@@ -2,6 +2,23 @@
   width: 100%;
   max-width: 25em;
 }
+.fade-in-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.fad-in{
+  width: 100%;
+  height: 25em;
+  background: rgba(31,34,37,0.6);
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all 1s ease-in-out;
+}
+.fade-in-box:hover .fad-in{
+  transform: translateY(0);
+}
 .product-items-image{
   width: 100%;
   max-width: 25em;
