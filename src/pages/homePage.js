@@ -1,7 +1,8 @@
 import './homePage.css';
-import HomePageContainer from '../components/homPageContainer';
-import AboutSection from '../components/aboutItem';
-import ProductSection from '../components/productsSection';
+import HomePageContainer from '../componets/homPageContainer';
+import AboutSection from '../componets/aboutItem';
+import ProductSection from '../componets/productsSection';
+import TestimonialSection from '../componets/testimonial';
 
 const HomePage = () => {
   return ( 
@@ -9,6 +10,7 @@ const HomePage = () => {
       <HomePageContainer />
       <AboutSection />
       <ProductSection />
+      <TestimonialSection />
     </div>
    );
 }

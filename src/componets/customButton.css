@@ -1,0 +1,31 @@
+.custom-button{
+  border: none;
+  background-color: #f0f011;
+  font-size: 1.2rem;
+  padding: 0.8em 1.5em;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.custom-button:hover{
+  border: 1px #fff solid;
+  background: transparent;
+  color: #fff;
+  margin-left: 1em;
+}
+
+.home-animation{
+  animation: show 3s ease-out;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

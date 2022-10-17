@@ -1,8 +1,8 @@
 import './App.css';
 import HomePage from './pages/homePage';
 import LoadingPage from './pages/isLoagingPage';
-import NavBar from './components/navBar';
-import MobileNavBar from './components/mobileNavBar';
+import NavBar from './componets/navBar';
+import MobileNavBar from './componets/mobileNavBar';
 import { useState, useEffect } from "react";
 import { Route, Switch } from 'react-router-dom';
 
