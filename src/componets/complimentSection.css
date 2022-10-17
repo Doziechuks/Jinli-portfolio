@@ -1,0 +1,89 @@
+.compliment-wrapper {
+  border: 1px red solid;
+  width: 100%;
+  min-height: 32em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  position: relative;
+}
+.compliment-header {
+  width: 100%;
+  padding: 5em 8em;
+  height: 100%;
+  background: rgba(31, 34, 37, 0.6);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.compliment-header h1 {
+  font-family: "Rufina", serif;
+  color: yellow;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+.compliment-header p {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 40em;
+  margin-bottom: 1.5em;
+  color: #fff;
+  line-height: 1.2em;
+}
+.compliment-icon {
+  width: 100%;
+  max-width: 50em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.compliment-icon-box {
+  width: 10em;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3em;
+  background: rgba(31, 34, 37, 0.6);
+  transition: all 1s ease-in-out;
+}
+
+.compliment-icon-box:hover {
+  background: rgba(31, 34, 37, 0.9);
+}
+.d-icon {
+  font-size: 5rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .compliment-header {
+    width: 100%;
+    padding: 5em 2em;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .compliment-wrapper{
+    height: 35em;
+  }
+  .compliment-header{
+    padding: 3em 1em;
+  }
+  .compliment-header h1{
+    font-size: 2rem;
+  }
+  .compliment-icon-box{
+    width: 5em;
+    height: 5em;
+  }
+  .d-icon{
+    font-size: 2rem;
+  }
+}
