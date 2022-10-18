@@ -1,0 +1,132 @@
+.footer-wrapper{
+  width: 100%;
+  background-color: black;
+   padding: 5em 8em;
+}
+.footer-section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.footer-logo-box {
+  width: 100%;
+  max-width: 30em;
+}
+.footer-logo {
+  font-size: 4rem;
+  color: yellow;
+}
+.footer-info {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: #fff;
+  width: 100%;
+  max-width: 20em;
+}
+.footer-media-logo {
+  width: 100%;
+}
+
+.d-media-logo {
+  width: 100%;
+  max-width: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-whatsapp,
+.footer-facebook,
+.footer-twitter {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.footer-links {
+  width: 100%;
+  max-width: 20em;
+  padding-top: 0.8em;
+}
+.footer-links h3 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 1.2em;
+  color: yellow;
+}
+.footer-links ul li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  color: #fff;
+}
+.footer-contact-info {
+  width: 100%;
+  max-width: 20em;
+  padding-top: 0.8em;
+}
+.footer-contact-info h3 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 1.2em;
+  color: yellow;
+}
+.footer-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+.footer-phone-icon {
+  font-size: 1.3rem;
+}
+.footer-contact p {
+  font-size: 1.2rem;
+  margin-left: 0.5em;
+}
+
+.footer-line{
+  width: 100%;
+  border: 1px #fff solid;
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+.copyright{
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
+}
+.company{
+  color: yellow;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-wrapper{
+    padding: 3em 1em;
+  }
+  .footer-logo-box{
+    max-width: 19em;
+  }
+  .footer-links{
+    max-width: 14em;
+  }
+  .footer-contact-info{
+    max-width: 14em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+   .footer-section{
+    flex-direction: column;
+  }
+  .footer-logo-box, .footer-links,.footer-contact-info{
+    max-width: 100%;
+  }
+}
