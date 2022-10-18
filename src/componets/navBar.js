@@ -11,7 +11,7 @@ const NavBar = () => {
   const [active, setActive] = useState('home');
   return (
     <div className="navbar-wrapper">
-      <Link to="/">
+      <Link to="/" onClick={() => setActive("home")}>
         <DiAndroid className="nav-icon" />
       </Link>
       <div className="nav-options">

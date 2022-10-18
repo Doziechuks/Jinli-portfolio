@@ -4,7 +4,7 @@ import { FormInput } from './formInputs';
 import { FormTextArea } from './formInputs';
 import CustomButton from './customButton';
 
-const ContactSection = () => {
+const ContactSection = ({ contatcPage }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -32,7 +32,7 @@ const ContactSection = () => {
   }
   return (
     <div className="contact-section-wrapper">
-      <div className="contact-title">
+      <div className={`contact-title ${ contatcPage ? 'hide-title' : '' }`}>
         <h1>get in touch</h1>
         <div className="contact-underline" />
       </div>
