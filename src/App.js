@@ -1,5 +1,6 @@
 import './App.css';
 import HomePage from './pages/homePage';
+import AboutPage from './pages/aboutPage';
 import LoadingPage from './pages/isLoagingPage';
 import NavBar from './componets/navBar';
 import MobileNavBar from './componets/mobileNavBar';
@@ -21,9 +22,10 @@ function App() {
           <NavBar />
           <MobileNavBar />
           <Switch>
-            <Route exact path="/" component={ HomePage } />
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/about" component={AboutPage} />
           </Switch>
-        </ div>
+        </div>
       ) : (
         <LoadingPage />
       )}
