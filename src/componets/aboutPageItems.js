@@ -11,7 +11,7 @@ const AboutPageItem = () => {
         }}
       >
         <h1>who we are</h1>
-        <div className="aboutpage-underine" />
+        <div className="aboutpage-underline" />
       </div>
       <div className="aboutus-info-box">
         <div className="about-info">

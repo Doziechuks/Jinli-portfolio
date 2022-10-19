@@ -6,6 +6,7 @@
 * a{
   color: black;
   text-decoration: none;
+  display: block;
 }
 * ul{
   padding: 0;
