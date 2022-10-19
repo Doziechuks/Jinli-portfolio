@@ -5,14 +5,16 @@ import { BsFacebook } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillClockCircle } from "react-icons/ai";
 import { GiRotaryPhone } from "react-icons/gi";
 import { MdLocationOn, MdEmail } from "react-icons/md";
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const FooterSection = ({ history }) => {
   return (
     <div className="footer-wrapper">
       <div className="footer-section">
         <div className="footer-logo-box">
-          <DiAndroid className="footer-logo" />
+          <Link to='/'>
+            <DiAndroid className="footer-logo" />
+          </Link>
           <p className="footer-info">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores,
             dolorum.
@@ -63,8 +65,9 @@ const FooterSection = ({ history }) => {
         </div>
       </div>
       <div className="footer-line" />
-      <p className='copyright'>
-        &copy;2022 <span class="company">Lorem, ipsum dolor.</span> all rights reserved
+      <p className="copyright">
+        &copy;2022 <span class="company">Lorem, ipsum dolor.</span> all rights
+        reserved
       </p>
     </div>
   );

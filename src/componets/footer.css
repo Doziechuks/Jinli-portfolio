@@ -42,6 +42,11 @@
   font-size: 1.7rem;
   color: #fff;
 }
+.footer-whatsapp:hover,
+.footer-facebook:hover,
+.footer-twitter:hover {
+  color: yellow;
+}
 .footer-links {
   width: 100%;
   max-width: 20em;
@@ -54,11 +59,15 @@
   color: yellow;
 }
 .footer-links ul li {
+  width: 3em;
   cursor: pointer;
   font-size: 1.2rem;
   margin-bottom: 0.5em;
   text-transform: capitalize;
   color: #fff;
+}
+.footer-links ul li:hover{
+  color: yellow;
 }
 .footer-contact-info {
   width: 100%;
