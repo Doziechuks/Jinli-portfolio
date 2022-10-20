@@ -66,7 +66,7 @@ const FooterSection = ({ history }) => {
       </div>
       <div className="footer-line" />
       <p className="copyright">
-        &copy;2022 <span class="company">Lorem, ipsum dolor.</span> all rights
+        &copy;2022 <span className="company">Lorem, ipsum dolor.</span> all rights
         reserved
       </p>
     </div>

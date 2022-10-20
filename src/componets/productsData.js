@@ -171,6 +171,6 @@ export const homePageProductsData = [
     title: "Lorem ipsum",
     imageUrl: "./images/jinlielista.jpg",
     id: 3,
-    linkUrl: "products/elctronics",
+    linkUrl: "products/electronics",
   },
 ];

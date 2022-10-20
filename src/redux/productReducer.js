@@ -1,9 +1,9 @@
 const initialState = {
   products: {
-    lorem: {
+    motorcycle: {
       id: 1,
       title: "Lorem ipsum",
-      routeName: "/motorcycle",
+      routeName: "motorcycle",
       items: [
         {
           id: 1,
@@ -61,10 +61,10 @@ const initialState = {
         },
       ],
     },
-    loremi: {
+    bicycles: {
       id: 2,
       title: "Lorem ipsum",
-      routeName: "/bicycles",
+      routeName: "bicycles",
       items: [
         {
           id: 10,
@@ -116,10 +116,10 @@ const initialState = {
         },
       ],
     },
-    loremip: {
+    electronics: {
       id: 3,
       title: "Lorem ipsum",
-      routeName: "/electronics",
+      routeName: "electronics",
       items: [
         {
           id: 18,
