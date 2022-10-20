@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 1000px) {
   .aboutus-info-box {
-    padding: 3em 1em;
+    padding: 3em 2em;
     flex-direction: column;
     gap: 0;
   }

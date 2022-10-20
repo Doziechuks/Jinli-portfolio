@@ -1,5 +1,10 @@
 .products-items-wrapper{
   width: 100%;
+  margin-bottom: 1em;
+  min-height: 18em;
+  padding: 0.8em;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3em;
 }
 .single-project {
   width: 100%;
@@ -41,8 +46,18 @@
   transform: scale(1) translate(-50%, -50%);
   opacity: 1;
 }
+.hr-rule{
+  border: 1px black solid;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 1em;
+}
 .product-item-name{
   text-align: center;
+  font-size: 1.3rem;
 }
 .mobile-name-purchase{
   display: none;

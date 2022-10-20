@@ -9,6 +9,7 @@ const ProductsItems = ({ items }) => {
           <img className="single-img" src={imageUrl} />
           <p className="single-icon">purchase</p>
         </div>
+        <div className="hr-rule" />
         <h1 className="product-item-name">{name}</h1>
         <div className="mobile-name-purchase">
           <h1 className="product-item-name-mobile">{name}</h1>

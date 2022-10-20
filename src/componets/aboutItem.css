@@ -63,7 +63,7 @@ img {
 
 @media screen and (max-width: 1000px) {
   .about-section-wrapper {
-    padding: 5em 0;
+    padding: 5em 2em;
   }
   .about-section-title-wrapper {
     margin: 0 auto;
