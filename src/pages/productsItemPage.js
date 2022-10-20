@@ -7,14 +7,13 @@ import { connect } from 'react-redux';
 
 
 const ProductsItemPage = ({ products }) => {
-  const { title, items } = products;
-  const backgorundImage = "./images/bajaj.jpg";
+  const { title, items, backgroundCover } = products;
   return (
     <div className="showProducts-wrapper">
       <div
         className="showProducts-header"
         style={{
-          backgroundImage: ` url(${backgorundImage})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(${backgroundCover})`,
         }}
       >
         <h1>our {title} brands</h1>
@@ -26,11 +25,9 @@ const ProductsItemPage = ({ products }) => {
           <div className="showProducts-title-underline" />
         </div>
         <div className="showProducts-map">
-          {
-            items.map((item) => {
-              return <ProductsItems key={item.id} items={item} />
-            })
-          }
+          {items.map((item) => {
+            return <ProductsItems key={item.id} items={item} />;
+          })}
         </div>
       </div>
       <ComplimentSection />

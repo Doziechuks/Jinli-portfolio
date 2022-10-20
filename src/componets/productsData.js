@@ -3,6 +3,7 @@ export const productsData = [
     id: 1,
     title: "Lorem ipsum",
     routeName: "/motorcycle",
+    backgroundCover: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     items: [
       {
         id: 1,
@@ -64,6 +65,7 @@ export const productsData = [
     id: 2,
     title: "Lorem ipsum",
     routeName: "/bicycles",
+    backgroundCover: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     items: [
       {
         id: 10,
@@ -119,6 +121,7 @@ export const productsData = [
     id: 3,
     title: "Lorem ipsum",
     routeName: "/electronics",
+    backgroundCover: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     items: [
       {
         id: 18,

@@ -4,6 +4,7 @@ const initialState = {
       id: 1,
       title: "Lorem ipsum",
       routeName: "motorcycle",
+      backgroundCover: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
       items: [
         {
           id: 1,
@@ -65,6 +66,7 @@ const initialState = {
       id: 2,
       title: "Lorem ipsum",
       routeName: "bicycles",
+      backgroundCover: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
       items: [
         {
           id: 10,
@@ -120,6 +122,7 @@ const initialState = {
       id: 3,
       title: "Lorem ipsum",
       routeName: "electronics",
+      backgroundCover: "https://i.ibb.co/XzcwL5s/black-shearling.png",
       items: [
         {
           id: 18,
