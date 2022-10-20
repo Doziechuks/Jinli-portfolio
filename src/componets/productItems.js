@@ -9,7 +9,7 @@ const ProductItems = ({ products, history, match }) => {
         <div
           className="fad-in"
           onClick={() => history.push(`${match.url}${linkUrl}`)}
-        ></div>
+        />
         <div
           className="product-items-image"
           style={{ backgroundImage: `url(${imageUrl})` }}
