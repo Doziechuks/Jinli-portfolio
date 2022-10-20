@@ -55,9 +55,16 @@
 
 @media screen and (max-width: 1000px) {
   .showproduct-box{
-    padding: 3em 2em;
+    padding: 3em 1.5em;
   }
   .showProducts-map{
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 650px) {
+  .showProducts-header h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: yellow;
+}
 }
