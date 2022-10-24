@@ -38,6 +38,7 @@
 .homepage-title {
   line-height: 1.5em;
   font-family: "Rufina", serif;
+  text-transform: capitalize;
   color: #fff;
   opacity: 0.8;
   font-size: 3.5rem;
