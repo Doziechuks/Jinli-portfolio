@@ -1,37 +1,34 @@
-import './mobileNavBar.css';
+import "./mobileNavBar.css";
 import { DiAndroid } from "react-icons/di";
 import { FaWhatsapp, FaTimes } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
-
+import { useState } from "react";
 
 const MobileNavBar = () => {
   const [showNav, setShowNav] = useState(false);
-  let transition = 'close';
-  if(showNav === true){
-    transition = 'open';
-  }
+
   return (
-    <div className="mobile-navebar-wrapper">
-      <div className="mobile-icon">
-        <Link to="/">
-          <DiAndroid className="mobile-nav-icon" />
-        </Link>
-        {showNav ? (
-          <div onClick={() => setShowNav(!showNav)}>
-            <FaTimes className="drop-down-icon" />
-          </div>
-        ) : (
-          <div onClick={() => setShowNav(!showNav)}>
-            <FaBars className="drop-down-icon" />
-          </div>
-        )}
-      </div>
-      {showNav ? (
-        <div className={`mobile-nav-options ${transition}`}>
+    <div className="mobile-navbar-wrapper">
+      <div className="inner-wrapper">
+         <div className="mobile-icon">
+          <Link to="/">
+            <DiAndroid className="mobile-nav-icon" />
+          </Link>
+          {showNav ? (
+            <div onClick={() => setShowNav(!showNav)}>
+              <FaTimes className="drop-down-icon" />
+            </div>
+          ) : (
+            <div onClick={() => setShowNav(!showNav)}>
+              <FaBars className="drop-down-icon" />
+            </div>
+          )}
+        </div>
+
+        <div className={`mobile-nav-options ${showNav && 'show-links'}`}>
           <div className="mobile-links">
             <Link
               to="/"
@@ -76,9 +73,9 @@ const MobileNavBar = () => {
             </div>
           </div>
         </div>
-      ) : null}
+      </div>
     </div>
   );
-}
- 
+};
+
 export default MobileNavBar;

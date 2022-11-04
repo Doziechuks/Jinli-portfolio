@@ -1,48 +1,66 @@
-.mobile-navebar-wrapper{
-  width: 100%;
-  padding: 0.5em 1em;
-  background-color: black;
+.mobile-navbar-wrapper {
   display: none;
 }
-.mobile-icon{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.mobile-nav-icon{
-  font-size: 2.5rem;
-  animation: mobile-icon 2s ease-in-out infinite;
-  color: yellow;
-}
-@keyframes mobile-icon {
-  0%{
-    transform: scale(1);
+@media screen and (max-width: 1000px) {
+  .mobile-navbar-wrapper {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
   }
-  50%{
-    transform: scale(1.2);
+   .inner-wrapper{
+    width: 100%;
+    height: 100%;
+  } 
+  .mobile-icon {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
   }
-  100%{
-    transform: scale(1);
+  .mobile-nav-icon {
+    font-size: 2rem;
+    animation: mobile-icon 2s ease-in-out infinite;
+    color: yellow;
   }
-}
-.drop-down-icon{
-  font-size: 2rem;
+  @keyframes mobile-icon {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .drop-down-icon{
+  font-size: 1.6rem;
   color: yellow;
 }
 .mobile-nav-options{
   width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 3s ease-in-out;
+  position: absolute;
+  right: 0;
+   transform: translateX(110%); 
+  transition: all 1s ease-in-out;
 }
-.close{
-  transform: translateX(-120%);
-}
-.open{
+.show-links{
   transform: translateX(0);
 }
 .mobile-links{
@@ -58,11 +76,11 @@
   text-align: center;
   font-size: 1.2rem;
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .mobile-media-handle{
   width: 100%;
-  margin-top: 2em;
+  margin: 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,8 +97,4 @@
   font-size: 1.5rem;
   color: #fff;
 }
-@media screen and (max-width: 1000px) {
-  .mobile-navebar-wrapper{
-    display: block;
-  }
 }
