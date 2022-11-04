@@ -48,20 +48,17 @@
 }
 .mobile-nav-options{
   width: 100%;
-  max-width: 60%;
-  margin: 0 auto;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 0;
-   transform: translateX(110%); 
+   transform: translateY(-150%); 
   transition: all 1s ease-in-out;
 }
 .show-links{
-  transform: translateX(0);
+  transform: translateY(-1%);
 }
 .mobile-links{
   width: 100%;
